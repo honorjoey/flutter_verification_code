@@ -2,11 +2,11 @@
 
 - A Flutter package that help you create a verification input.
 
-- Based on https://github.com/tiny-express/flutter_verification_code_input.
+- Based on https://github.com/awaik/flutter_verification_code.git
 
-- Added state change in case user delete char after complete fill, take a look an example on [Stackoverflow](https://stackoverflow.com/questions/59005381/how-to-know-when-user-delete-the-input-in-verificationcodeinput-flutter/59006077#59006077)
+- change item size double to customize the width and height Size(50, 60)
 
-- With version 1.1.0 supports copy/paste of entire code
+- change edit filed center align
 
 After install, in your Dart code, you can use:
 
@@ -25,6 +25,7 @@ import 'package:flutter_verification_code/flutter_verification_code.dart';
     cursorColor: Colors.blue, // If this is null it will default to the ambient
     // clearAll is NOT required, you can delete it
     // takes any widget, so you can implement your design
+    itemSize: const Size(50, 60), // default is Size(50, 50)
     clearAll: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Text(
